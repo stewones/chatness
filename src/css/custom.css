@@ -1,0 +1,213 @@
+:root {
+  --ifm-color-primary: #333;
+  --ifm-color-primary-dark: #e98c00;
+  --ifm-color-primary-darker: #cf7c00;
+  --ifm-color-primary-darkest: #995e06;
+  --ifm-color-primary-light: #ffd476;
+  --ifm-color-primary-lighter: #ffe09d;
+  --ifm-color-primary-lightest: #ffeeca;
+
+  --ifm-code-font-size: 95%;
+  --ifm-blockquote-color: #ecf4f9;
+  --ifm-blockquote-color-dark: #cbddea;
+  --ifm-footer-padding-vertical: 50px;
+  --ifm-code-padding-vertical: 0.1rem;
+  --ifm-code-padding-horizontal: 0.2rem;
+}
+
+:root[data-theme='dark'] {
+  --ifm-color-primary: #ffc038;
+  --ifm-color-primary-dark: #e0a931;
+  --ifm-color-primary-darker: #ad8123;
+  --ifm-color-primary-darkest: #946d19;
+  --ifm-color-primary-light: #ffd476;
+  --ifm-color-primary-lighter: #ffe09d;
+  --ifm-color-primary-lightest: #ffeeca;
+
+  --ifm-blockquote-color: #1a1d1e;
+  --ifm-blockquote-color-dark: #ff8b3d;
+}
+
+:root[data-theme='dark'] .hero.hero--primary {
+  --ifm-hero-background-color: #febf38;
+  --ifm-hero-text-color: #333333;
+}
+
+:root[data-theme='dark'] code {
+  background-color: rgb(39, 40, 34);
+}
+:root {
+  --ifm-font-family-base: SFCompactRounded, system-ui, -apple-system, Segoe UI,
+    Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont,
+    'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol';
+}
+
+blockquote {
+  color: var(--ifm-font-base-color);
+  background-color: var(--ifm-blockquote-color);
+  border-left: 6px solid var(--ifm-blockquote-color-dark);
+  border-radius: var(--ifm-global-radius);
+}
+
+code {
+  background-color: var(--ifm-color-emphasis-300);
+  border-radius: 0.2rem;
+}
+
+a code {
+  color: inherit;
+}
+
+.navbar .navbar__items {
+  flex: 1 1 auto;
+}
+
+.footer__logo {
+  width: 40px;
+  height: 40px;
+}
+
+footer small {
+  line-height: 19px;
+  display: block;
+  opacity: 0.55;
+}
+
+footer .container .text--center {
+  border-top: 1px solid #333;
+  padding-top: 42px;
+  margin-top: 42px;
+}
+
+footer .footer__links .footer__col:nth-child(4) .footer__title {
+  opacity: 0;
+}
+
+.menu__link {
+  font-weight: normal;
+}
+
+.menu__link--sublist {
+  color: var(--ifm-font-base-color) !important;
+  font-weight: var(--ifm-font-weight-semibold);
+}
+
+.menu .menu__link.menu__link--sublist:after {
+  transform: rotateZ(180deg);
+  -webkit-transition: -webkit-transform 0.2s linear;
+  transition: -webkit-transform 0.2s linear;
+  transition-property: transform, -webkit-transform;
+  transition-duration: 0.2s, 0.2s;
+  transition-timing-function: linear, linear;
+  transition-delay: 0s, 0s;
+  transition: transform 0.2s linear;
+  transition: transform 0.2s linear, -webkit-transform 0.2s linear;
+}
+
+.menu .menu__list-item.menu__list-item--collapsed .menu__link--sublist:after {
+  transform: rotateZ(90deg);
+}
+
+.hero__subtitle {
+  line-height: 28px;
+  font-weight: 400;
+}
+
+.navbar .navbar__logo {
+  margin-right: 0.4rem;
+  width: 28px;
+}
+
+.features_src-pages- {
+  padding: 6rem 0 !important;
+}
+
+.navbar .navbar__brand {
+  width: 100%;
+}
+
+.navbar .navbar__toggle {
+  width: 20px;
+  opacity: 0.5;
+}
+
+.navbar .navbar__title {
+  font-size: 18px;
+}
+
+.docSidebarContainer_node_modules-\@docusaurus-theme-classic-src-theme-DocPage- {
+  border-right: 0 !important;
+}
+
+/* .codeBlockLines_node_modules-\@docusaurus-theme-classic-src-theme-CodeBlock- {
+  float: left;
+  min-width: auto;
+  padding: 2px 9px !important;
+} */
+
+/*
+FONTS
+*/
+@font-face {
+  font-family: 'SFCompactRounded';
+  src: url('/fonts/SF-Compact-Rounded-Black.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SFCompactRounded';
+  src: url('/fonts/SF-Compact-Rounded-Heavy.otf') format('opentype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SFCompactRounded';
+  src: url('/fonts/SF-Compact-Rounded-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SFCompactRounded';
+  src: url('/fonts/SF-Compact-Rounded-Semibold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SFCompactRounded';
+  src: url('/fonts/SF-Compact-Rounded-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SFCompactRounded';
+  src: url('/fonts/SF-Compact-Rounded-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SFCompactRounded';
+  src: url('/fonts/SF-Compact-Rounded-Thin.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SFCompactRounded';
+  src: url('/fonts/SF-Compact-Rounded-Light.otf') format('opentype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SFCompactRounded';
+  src: url('/fonts/SF-Compact-Rounded-Ultralight.otf') format('opentype');
+  font-weight: 100;
+  font-style: normal;
+}
