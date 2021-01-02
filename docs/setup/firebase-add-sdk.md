@@ -19,15 +19,15 @@ cp src/app/config/firebase.blank.txt src/app/config/firebase.ts
 
 From Firebase menu, click the cog button located right after _Project Overview_ and then access _Project Settings_
 
-![firebase project settings](/static/images/docs/firebase-project-settings.png)
+![firebase project settings](/images/docs/firebase-project-settings.png)
 
 Then register a new web app platform
 
-![firebase app register](/static/images/docs/firebase-app-register.png)
+![firebase app register](/images/docs/firebase-app-register.png)
 
 You'll be prompted to enter an app nickname. The _Firebase Hosting_ option is not required.
 
-![firebase app register](/static/images/docs/firebase-add-sdk.png)
+![firebase app register](/images/docs/firebase-add-sdk.png)
 
 ### Edit with your credentials
 

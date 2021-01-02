@@ -47,7 +47,7 @@ npx cap open ios
 
 Once Xcode is open, just click the Play button to run your app on a Simulator or Device.
 
-![iOS running your app](/static/images/docs/ios-running.png)
+![iOS running your app](/images/docs/ios-running.png)
 
 ## Next steps
 

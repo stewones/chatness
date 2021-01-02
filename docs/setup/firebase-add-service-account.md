@@ -18,11 +18,11 @@ This is a sensitive information intended to only run on backend. So make sure th
 
 From Firebase menu, click the cog button located right after _Project Overview_ and then access _Project Settings_
 
-![firebase project settings](/static/images/docs/firebase-project-settings.png)
+![firebase project settings](/images/docs/firebase-project-settings.png)
 
 Then access the **Service accounts** tab and **generate a new private key** for Node.js
 
-![firebase service account](/static/images/docs/firebase-service-account.png)
+![firebase service account](/images/docs/firebase-service-account.png)
 
 Once the json is downloaded copy it to the `seeds` folder and rename the file
 
