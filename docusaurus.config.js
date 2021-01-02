@@ -151,7 +151,7 @@ module.exports = {
       indexName: 'chatness',
       algoliaOptions: {},
     },
-    googleAnalytics: {
+    gtag: {
       trackingID: 'G-CVQ2BYVZLS',
     },
   },
