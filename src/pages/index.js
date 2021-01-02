@@ -80,7 +80,7 @@ const otherLibraries = [
   {
     content: 'A premium Ionic app built on top of Chatness',
     title: 'Chatness App',
-    link: 'https://chatness.app',
+    link: 'https://docs.chatness.app',
     image: (
       <svg
         xmlns="http://www.w3.org/2000/svg"

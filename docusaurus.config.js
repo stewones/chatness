@@ -1,7 +1,7 @@
 module.exports = {
   title: 'Chatness',
   tagline: 'Feature rich and portable chat stuff for Javascript apps',
-  url: 'https://chatness.app',
+  url: 'https://docs.chatness.app',
   baseUrl: '/',
   favicon: 'images/favicon.png',
   organizationName: 'chatness',
