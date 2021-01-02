@@ -3,7 +3,7 @@
     "start": "docusaurus start",
     "build": "docusaurus build",
     "swizzle": "docusaurus swizzle",
-    "deploy": "vercel"
+    "deploy": "npm run build && rm -rf ./dist && mkdir ./dist && cp -rf ./.hosting/* ./dist && cp -rf ./build/* ./dist/public && cd ./dist && firebase deploy --only hosting --project getchatness"
   },
   "dependencies": {
     "@docusaurus/core": "2.0.0-alpha.54",

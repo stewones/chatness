@@ -152,7 +152,7 @@ module.exports = {
       algoliaOptions: {},
     },
     googleAnalytics: {
-      trackingID: 'UA-xxx-1',
+      trackingID: 'G-CVQ2BYVZLS',
     },
   },
   presets: [
