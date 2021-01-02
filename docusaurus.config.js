@@ -143,7 +143,7 @@ module.exports = {
         src: 'images/chatness-logo.svg',
         href: 'https://chatness.app',
       },
-      copyright: `<small><span>©${new Date().getFullYear()}</span><br />handcrafted by <a href="https://twitter.com/stw" rel="noopener" target="_blank">Stw</a></small>`,
+      copyright: `<small><span>©${new Date().getFullYear()}</span><br />handcrafted by <a href="https://twitter.com/stewones" rel="noopener" target="_blank">Stew</a></small>`,
     },
     gtag: {
       trackingID: 'G-CVQ2BYVZLS',
