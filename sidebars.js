@@ -4,10 +4,10 @@ module.exports = {
     App: ['app/download', 'app/install', 'app/structure'],
 
     Setup: [
-      'setup/firebase-create-account',
+      'setup/firebase-create-project',
       'setup/firebase-install-cli',
       'setup/firebase-link-firestore',
-      'setup/firebase-add-config',
+      'setup/firebase-add-sdk',
       'setup/firebase-add-service-account',
       'setup/seed-database',
       'setup/run-app',

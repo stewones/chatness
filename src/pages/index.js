@@ -9,7 +9,7 @@ import styles from './styles.module.css';
 const features = [
   {
     content: (
-      <p>
+      <p class="text--center">
         Chatness helps you write apps that <strong>behave consistently</strong>,
         run in different environments and are{' '}
         <strong>better to test, customize and extend</strong>.
@@ -32,7 +32,7 @@ const features = [
   },
   {
     content: (
-      <p>
+      <p class="text--center">
         Despite built on top of Angular, Chatness is fully independent and
         modular. Its elements are exported as <strong>web components </strong>{' '}
         making it possible to reuse features on every{' '}
@@ -53,7 +53,7 @@ const features = [
   },
   {
     content: (
-      <p>
+      <p class="text--center">
         Chatness app state relies on the Redux DevTools making it easy to trace{' '}
         <strong>when, where, why and how the app state has changed</strong>.
       </p>
@@ -128,7 +128,8 @@ function Home() {
               textAlign: 'center',
             }}
           >
-            Black Lives Matter.
+            Black Lives Matter
+            <br />
             <a
               style={{
                 display: 'inline-block',
