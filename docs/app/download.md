@@ -7,4 +7,4 @@ hide_title: true
 
 # Download
 
-Grab the latest version of Chatness from the [secured area](https://chatness.app/secure)
+Grab the latest version of Chatness using the link you received in the purchase confirmation email.
