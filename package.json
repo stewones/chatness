@@ -6,8 +6,9 @@
     "deploy": "npm run build && rm -rf ./dist && mkdir ./dist && cp -rf ./.hosting/* ./dist && cp -rf ./build/* ./dist/public && cd ./dist && firebase deploy --only hosting --project getchatness"
   },
   "dependencies": {
-    "@docusaurus/core": "2.0.0-alpha.54",
-    "@docusaurus/preset-classic": "2.0.0-alpha.54",
+    "@cmfcmf/docusaurus-search-local": "^0.5.0",
+    "@docusaurus/core": "2.0.0-alpha.70",
+    "@docusaurus/preset-classic": "2.0.0-alpha.70",
     "classnames": "2.2.6",
     "react": "16.13.0",
     "react-dom": "16.13.0"
