@@ -134,11 +134,13 @@ values={[
 </TabItem>
 <TabItem value="output">
 
-| Name          | Type       |
-| ------------- | ---------- |
-| scrollDown    | `void`     |
-| scrollUp      | `void`     |
-| onAvatarClick | `ChatUser` |
+| Name            | Type          |
+| --------------- | ------------- |
+| scrollDown      | `void`        |
+| scrollUp        | `void`        |
+| onAvatarClick   | `ChatUser`    |
+| onMessageDelete | `ChatMessage` |
+| onImageZoom     | `string`      |
 
   </TabItem>
  </Tabs>
@@ -159,6 +161,7 @@ values={[
 | to          | `ChatUser/ChatGroup` |
 | placeholder | `string`             |
 | entityType  | `ChatType`           |
+| folder      | `string`             |
 
 </TabItem>
 <TabItem value="output">
