@@ -31,7 +31,7 @@ Once the json is downloaded copy it to the `seeds` folder and rename the file
   "type": "service_account",
   "project_id": "my-chat-app-d7vac",
   "private_key_id": "632c0f93346d5287334f714a5ae2b2e92ccbfc9",
-  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCwcbt0bhtJ4cij\n0xdBVWpZFmJa9igaA8gNdmJdcicRakCmwDfLhyKmsmWkts9zcLNb3jAsOGq8PAOU\nPxJUzC564NaQRKAAqmE3YPkTOn/+JIu9QIdAA4zmXO\nFhAVUeGsmoJE00vU/sUaNw==\n-----END PRIVATE KEY-----\n",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADA",
   "client_email": "firebase-adminsdk-skstr@my-chat-app-d7vac.iam.gserviceaccount.com",
   "client_id": "1091161964712176364",
   "auth_uri": "https://accounts.google.com/o/oauth2/auth",
@@ -40,3 +40,5 @@ Once the json is downloaded copy it to the `seeds` folder and rename the file
   "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-skstr%40my-chat-app-d7vac.iam.gserviceaccount.com"
 }
 ```
+
+> Final result should look like as the code snippet above. Make sure to add this file into your .gitignore

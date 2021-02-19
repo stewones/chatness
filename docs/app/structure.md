@@ -12,6 +12,8 @@ The Chatness app folder structure is basically composed of
 ```
 .
 ├── \elements
+├── \functions
+├── \resources
 ├── \seeds
 ├── \src
 │ ├── \app
@@ -42,6 +44,14 @@ The Chatness app folder structure is basically composed of
 ### Elements
 
 Decoupled environment for building web components. In case you need to modify or add a new element based on Chatness you can edit the `elements.modules.ts` which lives inside this folder and then issue `npm run build:elements`
+
+### Functions
+
+Dedicated environment for server side stuff like the push notification trigger.
+
+### Resources
+
+Icon and splash files you can use as example to edit your own before deploying the app to device.
 
 ### Seeds
 

@@ -24,3 +24,19 @@ npm run start:prod
 ```
 
 Same as above but with production bundle and no HMR
+
+### iOS
+
+```sh
+npm run serve:ios
+```
+
+Same as development mode but will also open the IDE so you can execute the app in device. Make sure to have [set up the iOS environment](/dev/build-ios).
+
+### Android
+
+```sh
+npm run serve:android
+```
+
+Same as development mode but will also open the IDE so you can execute the app in device. Make sure to have [set up the Android environment](/dev/build-android).

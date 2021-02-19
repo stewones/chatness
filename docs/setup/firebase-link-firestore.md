@@ -26,7 +26,7 @@ Afterward the CLI should generate 2 new files `.firebaserc` and `firebase.json` 
 
 ## Deploy rules and indexes
 
-Now we can safely deploy Chatness rules and indexes
+Now we can safely deploy Chatness rules and indexes. These are going to be important for the seed step further ahead.
 
 ```sh
 firebase deploy --only firestore:indexes,firestore:rules

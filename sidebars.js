@@ -14,10 +14,10 @@ module.exports = {
     ],
 
     Development: [
-      'dev/components',
-      'dev/build-elements',
       'dev/build-ios',
       'dev/build-android',
+      'dev/build-elements',
+      'dev/components',
     ],
   },
 };
