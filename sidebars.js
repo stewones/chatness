@@ -17,6 +17,7 @@ module.exports = {
       'dev/build-ios',
       'dev/build-android',
       'dev/build-elements',
+      'dev/push-notifications',
       'dev/components',
     ],
   },
