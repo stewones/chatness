@@ -33,7 +33,7 @@ npx cap add android
 npx cap sync
 ```
 
-The `sync` command updates dependencies, and copies any web assets to your project. You can also run:
+The `sync` command updates dependencies, and copies any web assets to your project. Always that you install a new Capacitor plugin you'll need to run this sync command.
 
 ```bash
 npx cap copy

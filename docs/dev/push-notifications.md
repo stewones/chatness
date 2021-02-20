@@ -5,6 +5,8 @@ description: 'Steps to configure Chatness push notifications for iOS and Android
 hide_title: true
 ---
 
+# Push Setup
+
 ## iOS
 
 Follow these steps to configure Chatness push notifications for iOS. Make sure to have followed these [iOS build](/dev/build-ios) instructions and the app is running with `npm run serve:ios`
@@ -17,16 +19,16 @@ Keep in mind that you'll need an active Apple Membership to configure push notif
 
 The first thing we need to do is creating an app id on Apple Developer site. This app id must be unique and will be used by the final bundle and App Store to identify your application.
 
-1. go to [developer.apple.com](https://developer.apple.com/)
-2. access your account
-3. navigate to [Certificates, IDs & Profiles](https://developer.apple.com/account/resources/certificates/list)
-4. from the left menu, go to _Identifiers_
-5. click the plus (+) button
-6. choose _App IDs_ and continue
-7. select _App_
-8. enter a description and the bundle ID which must be unique (eg: com.my.chat.app)
-9. select _Push Notifications_ in the list
-10. continue and register
+1. Go to [developer.apple.com](https://developer.apple.com/)
+2. Access your account
+3. Navigate to [Certificates, IDs & Profiles](https://developer.apple.com/account/resources/certificates/list)
+4. From the left menu, go to _Identifiers_
+5. Click the plus (+) button
+6. Choose _App IDs_ and continue
+7. Select _App_
+8. Enter a description and the bundle ID which must be unique (eg: com.my.chat.app)
+9. Select _Push Notifications_ in the list
+10. Continue and register
 
 ### Create a Certificate Signing Request
 
@@ -102,18 +104,67 @@ Now it's time to add your bundle ID to Capacitor and then issue `npm run serve:i
 
 ### Add Google Service
 
-Include the `GoogleService-Info.plist` acquired earlier in the native project. In Xcode right-click on the yellow folder named "App" and then select the option "Add files to App".
+To include the `GoogleService-Info.plist` acquired earlier in the native project, open Xcode with `npm run serve:ios` and right-click on the yellow folder named "App" and then select the option "Add files to App".
 
 ![xcode add files](/images/docs/xcode-add-files.png)
 
-### Test notification
+### Test iOS notification
 
-Now you can deploy the app to device (xcode's play button). Once it's running you should be subscribed to a `test` topic. Head to Firebase Console > Cloud Messaging option from menu and click on "Send your first message". Enter a notification title and text, click next and under "Target" select the option "Topic", next, next, review and publish. If you have followed correctly all the steps you should receive this notification on your device.
+Now you can deploy the app to device (Xcode's play button). Once it's running you will be subscribed to a `test` topic. Head to _Firebase Console > Cloud Messaging_ option from menu and click on "Send your first message". Enter a notification title and text, click next and then under "Target" select the option "Topic", next, next, review and publish. If you have followed correctly all the steps above you should receive this notification on your device.
 
 ![firebase notification test](/images/docs/firebase-notification-test.png)
 
-### Chat notifications
+## Android
 
-To get notifications about the chat, 1x1, group or first time senders, you should deploy the message trigger to Firebase Functions.
+Follow these steps to configure Chatness push notifications for Android. Make sure to have followed these [Android build](/dev/build-android) instructions and the app is running with `npm run serve:android`
 
-From your app root issue `npm run functions:deploy` and you should be all set. To receive notifications from a group you'll need to have visited that group earlier.
+Before starting issue an `npm install` to keep dependencies aligned and up to date. Especially if you're upgrading Chatness from a previous version.
+
+### Create a Firebase Android App
+
+Go to your project settings
+![firebase project settings](/images/docs/firebase-project-settings.png)
+
+Add a new app (Android icon)
+![firebase android app](/images/docs/firebase-add-ios-app.png)
+
+Fill in the Android package name. It can be the same as iOS bundle id, then register the app and download the `google-service.json` file
+
+### Add Google Services to the native project
+
+To include `google-service.json` acquired earlier in the native project, open Android Studio with `npm run serve:android` and then drag and drop the file under the folder named "app".
+
+### Import FCM Plugin
+
+For Capacitor apps < 3.0 we need to tell it to initialise the plugin
+
+1. Open the file `MainActivity.java`. It's located at `app/java/[your.package.name]/MainActivity`
+2. add `import com.getcapacitor.community.fcm.FCMPlugin;` on top
+3. add `add(FCMPlugin.class);` inside the init callback
+
+It should look like
+
+```java
+//...
+import com.getcapacitor.community.fcm.FCMPlugin;
+
+// ...
+this.init(savedInstanceState, new ArrayList<Class<? extends Plugin>>() {{
+    add(FCMPlugin.class);
+}});
+
+```
+
+### Test Android notification
+
+Now you can deploy the app to device (Studio's play button). Once it's running you will be subscribed to a `test` topic. Head to _Firebase Console > Cloud Messaging_ option from menu and click on "Send your first message". Enter a notification title and text, click next and then under "Target" select the option "Topic", next, next, review and publish. If you have followed correctly all the steps above you should receive this notification on your device.
+
+![firebase notification test](/images/docs/firebase-notification-test.png)
+
+## Chat notifications
+
+To get notifications for chat, 1x1 or groups, you should also deploy the message trigger to Firebase Functions.
+
+From your app root, issue `npm run functions:deploy` and you should be all set. To start receiving notifications from a group you'll need to have visited that group before.
+
+> Push notifications are proudly powered by the [Capacitor FCM community plugin](https://github.com/capacitor-community/fcm). Please make sure to leave a star on Github ⭐

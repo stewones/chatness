@@ -18,6 +18,7 @@ module.exports = {
       'dev/build-android',
       'dev/build-elements',
       'dev/push-notifications',
+      'dev/resources',
       'dev/components',
     ],
   },
