@@ -5,9 +5,10 @@
     "light": "/chatness-logo-dark.svg",
     "dark": "/chatness-logo-light.svg"
   },
-  "github": "chatness/docs",
+  "github": "intenseloop/chatness",
   "twitter": "@stewones",
   "defaultDir": "",
   "defaultBranch": "master",
-  "apiLinks": []
+  "apiLinks": [],
+  "docsHidden": ["privacy", "buy"]
 }

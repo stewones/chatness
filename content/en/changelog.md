@@ -40,31 +40,31 @@ Maintenance update with minor fixes
 
 For first time senders, meaning when a contact that has never talked to you before send a private message, that very first message will fire a notification on your registered devices (iphone, android, ipad, tablet, etc). Devices are registered on every login and deregistered on logout.
 
-<img class="w-64 mt-5" src="/images/changelog/push-notifications-first-time-sender.jpeg" />
+<img class="w-64 m-auto" src="/images/tour/push-notifications-first-time-sender.jpeg" />
 
 ### 1x1 push
 
 Once you estabilish contact with someone, your registered devices should receive all notifications from that person in background (app closed or minimized) and increase the app badge counter. Badge counter is reseted once you open the app.
 
-<img class="w-64 mt-5" src="/images/changelog/push-notifications-1x1.gif" />
+<img class="w-64 m-auto" src="/images/tour/push-notifications-1x1.gif" />
 
 ### Groups push
 
 When a chat group is visited you automatically opt-in to receive notifications from all the users inside that group.
 
-<img class="w-64 mt-5" src="/images/changelog/push-notifications-group.jpeg" />
+<img class="w-64 m-auto" src="/images/tour/push-notifications-group.jpeg" />
 
 ### Notification Settings
 
 You can always decide later on from whom you want to receive push notifications, both for groups and users.
 
-<img class="w-64 mt-5" src="/images/changelog/push-notifications-settings.jpeg" />
+<img class="w-64 m-auto" src="/images/tour/push-notifications-settings.jpeg" />
 
 ### Chat Settings
 
 You can also silent an user or group directly from the chat using the menu option (three dots) in the top/right corner.
 
-<img class="w-64 mt-5" src="/images/changelog/push-notifications-silent.jpeg" />
+<img class="w-64 m-auto" src="/images/tour/push-notifications-silent.jpeg" />
 
 ### Other fixes and improvements
 
@@ -90,13 +90,13 @@ Mainly purpose of this release is aiming make it possible to easily add pictures
 
 Added message delete option (long press on message). It's synced in realtime with cache invalidation.
 
-<img class="w-64 mt-5" src="/images/changelog/chat-message-delete.gif" />
+<img class="w-64 m-auto" src="/images/tour/chat-message-delete.gif" />
 
 ### Media upload
 
 Added media upload options alongside the message bar. Select photos or videos. Take picture or record video.
 
-<img class="w-64 mt-5" src="/images/changelog/chat-select-photos.gif" />
+<img class="w-64 m-auto" src="/images/tour/chat-select-photos.gif" />
 
 ### Other fixes and improvements
 

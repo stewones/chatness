@@ -19,32 +19,21 @@ Clean, easy to use and bootstrap-friendly starter kit for Ionic Angular applicat
 
 ## Features
 
-25+ awesome features built for developers, backed by Firebase.
+14+ awesome features built for developers, backed by Firebase.
 
-- ✨&nbsp; Animated splash screen
-- 🔓&nbsp; Password auth
-- 🪄&nbsp; Email magic link <badge>soon</badge>
-- 🍎&nbsp; Sign in with Apple <badge>soon</badge>
-- 👍&nbsp; Facebook login <badge>soon</badge>
-- 🐦&nbsp; Twitter login <badge>soon</badge>
-- 😸&nbsp; Github login <badge>soon</badge>
-- 🔐&nbsp; Forgot password
-- ✏️&nbsp; Realtime task list
-- 📋&nbsp; Realtime task kanban
-- 🔎&nbsp; Task search
-- 📢&nbsp; Push notifications <badge>soon</badge>
-- ⚙️&nbsp; User settings
-- 💁&nbsp; User profile
-- 🔧&nbsp; Change user name
-- 🔑&nbsp; Change user password
-- 😛&nbsp; Change user avatar <badge>soon</badge>
-- 🌙&nbsp; Dark and light mode
-- 🗺️&nbsp; Google maps integration <badge>soon</badge>
-- 📕&nbsp; Agenda integration
-- 🎤&nbsp; Speech recognition
-- 🔊&nbsp; Text to speech
-- 🔦&nbsp; Barcode scanner
-- 📱&nbsp; Admob
+- ✨&nbsp; [Offline Support](/tour/offline-support)
+- 🌙&nbsp; [Light and Dark UI](/tour/interface)
+- 💬&nbsp; [Chat in Groups](/tour/chat-group)
+- 🧑&nbsp; [Chat in Private](/tour/chat-private)
+- 🔎&nbsp; [Chat Contacts with seach](/tour/contact-list)
+- 📄&nbsp; [Chat Pagination](/tour/pagination)
+- 📷&nbsp; [Take Photos](/tour/take-photos)
+- 📱&nbsp; [Select Photos](/tour/select-photos)
+- 📹&nbsp; [Add Videos](/tour/select-photos)
+- 🗑️&nbsp; [Message Deletion](/tour/delete-messages)
+- 🔔&nbsp; [App Notifications](/tour/push-notifications)
+
+plus app settings, autentication, and much more to come. Check out [our roadmap](https://tiny.one/chatness-roadmap)
 
 ## Demo
 

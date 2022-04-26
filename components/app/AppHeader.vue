@@ -52,16 +52,17 @@
             >{{ lastRelease.name }}</NuxtLink
           >
           <div class="flex items-center">
-            <a
+            <NuxtLink
+              :to="localePath('/buy')"
               style="padding: 2px"
-              class="cursor-pointer relative inline-flex items-center justify-center mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg bg-gradient-to-br from-red-600 to-orange-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-red-200 dark:focus:ring-red-800"
+              class="cursor-pointer relative inline-flex items-center justify-center mr-2 overflow-hidden text-sm font-medium text-white rounded-lg bg-gradient-to-br from-red-600 to-orange-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-red-200 dark:focus:ring-red-800"
             >
               <span
                 class="hover:bg-opacity-0 relative px-3 py-1 transition-all ease-in duration-75 dark:bg-gray-900 rounded-md"
               >
                 <span class="opacity-80"> Buy Now </span>
               </span>
-            </a>
+            </NuxtLink>
 
             <!-- <a
               class="text-gray-700 dark:text-gray-300 hover:text-primary-500 dark-hover:text-primary-500"

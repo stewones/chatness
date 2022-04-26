@@ -23,15 +23,15 @@ Join our discord channel
 
 ## Email
 
-<div class="flex flex-row space-x-3 items-center">
+<div class="flex flex-col space-y-1">
 
 <div>
-Talk via email 👉
+Talk via email
 </div>
 
 <div class="wrapper">
 
-support@intenseloop.com
+👉 &nbsp; support@intenseloop.com
 
 </div>
 
@@ -39,15 +39,15 @@ support@intenseloop.com
 
 ## Roadmap
 
-<div class="flex flex-row space-x-3 items-center">
+<div class="flex flex-col space-y-1">
 
 <div>
-Check out our roadmap 👉
+Check out our roadmap
 </div>
 
 <div class="wrapper">
 
-https://tiny.one/chatness-roadmap
+👉 &nbsp; https://tiny.one/chatness-roadmap
 
 </div>
 
@@ -55,15 +55,15 @@ https://tiny.one/chatness-roadmap
 
 ## Bug Report
 
-<div class="flex flex-row space-x-3 items-center">
+<div class="flex flex-col space-y-1">
 
 <div>
-Got any issues? 👉
+Got any issues?
 </div>
 
 <div class="wrapper">
 
-https://shorturl.at/imFLT
+👉 &nbsp; https://tiny.one/chatness-bug
 
 </div>
 
@@ -71,15 +71,15 @@ https://shorturl.at/imFLT
 
 ## Enhancement Request
 
-<div class="flex flex-row space-x-3 items-center">
+<div class="flex flex-col space-y-1">
 
 <div>
-Got ideas about current features? 👉
+Got ideas about current features?
 </div>
 
 <div class="wrapper">
 
-https://shorturl.at/hsBM4
+👉 &nbsp; https://tiny.one/chatness-enhancement
 
 </div>
 
@@ -87,15 +87,15 @@ https://shorturl.at/hsBM4
 
 ## Feature Request
 
-<div class="flex flex-row space-x-3 items-center">
+<div class="flex flex-col space-y-1">
 
 <div>
-Want to see new features added? 👉
+Want to see new features added?
 </div>
 
 <div class="wrapper">
 
-https://shorturl.at/qEMY0
+👉 &nbsp; https://tiny.one/chatness-feature
 
 </div>
 

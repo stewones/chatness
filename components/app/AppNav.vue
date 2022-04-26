@@ -30,6 +30,9 @@
               v-for="doc of docs"
               :key="doc.slug"
               class="text-gray-700 dark:text-gray-300"
+              :class="{
+                hidden: isDocumentHidden(doc),
+              }"
             >
               <NuxtLink
                 :to="localePath(doc.to)"
@@ -148,6 +151,9 @@ export default {
       }
 
       return false;
+    },
+    isDocumentHidden(document) {
+      return this.settings.docsHidden?.includes(document.slug);
     },
   },
 };
