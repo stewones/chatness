@@ -1,0 +1,21 @@
+name: site
+"on":
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install modules
+        run: npm ci
+      - name: Build site
+        run: npm run generate
+      - name: Deploy
+        uses: cloudflare/wrangler-action@1.3.0
+        env:
+          USER: root
+        with:
+          apiToken: ${{ secrets.CF_API_TOKEN }}

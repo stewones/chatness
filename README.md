@@ -1,33 +1,27 @@
-# Website
+# chatness-docs
 
-This website is built using Docusaurus 2, a modern static website generator.
+## Setup
 
-### Installation
+Install dependencies:
 
-```
-$ yarn
-```
-
-### Local Development
-
-```
-$ yarn start
+```bash
+npm run install
 ```
 
-This command starts a local development server and open up a browser window. Most changes are reflected live without having to restart the server.
+## Development
 
-### Build
-
-```
-$ yarn build
+```bash
+npm run dev
 ```
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+## Static Generation
 
-### Deployment
+This will create the `dist/` directory for publishing to static hosting:
 
+```bash
+npm run generate
 ```
-$ GIT_USER=<Your GitHub username> USE_SSH=1 yarn deploy
-```
 
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+To preview the static generated app, run `npm run start`
+
+For detailed explanation on how things work, checkout [nuxt/content](https://content.nuxtjs.org) and [@nuxt/content theme docs](https://content.nuxtjs.org/themes-docs).

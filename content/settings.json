@@ -1,0 +1,13 @@
+{
+  "title": "Chatness",
+  "url": "https://chatness.io",
+  "logo": {
+    "light": "/chatness-logo-dark.svg",
+    "dark": "/chatness-logo-light.svg"
+  },
+  "github": "chatness/docs",
+  "twitter": "@stewones",
+  "defaultDir": "",
+  "defaultBranch": "master",
+  "apiLinks": []
+}

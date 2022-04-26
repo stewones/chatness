@@ -1,0 +1,8 @@
+name = "chatness-site"
+type = "webpack"
+account_id = "04e462cb3af0bbffa3eade71c4c5862b"
+workers_dev = true
+
+[site]
+bucket = "dist"
+entry-point = "workers"
