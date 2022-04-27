@@ -17,3 +17,9 @@ hidden: true
 ## Frequent Asked Questions
 
 👉&nbsp; https://tiny.one/chatness-faq
+
+<alert>
+
+For those who bought Chatness prior to April 26th, 2022 [please contact us](/support) for access restore.
+
+</alert>

@@ -5,10 +5,10 @@ position: 6
 category: Setup
 ---
 
-Grab the latest version of Chatness from CodeCanyon. Case you didn't acquire a license yet, [buy one here]().
+Grab the latest version of Chatness from CodeCanyon, in case you didn't acquire a license yet, [buy one here]().
 
 <alert>
 
-For those who bought Chatness before March 1. [Download here](https://secure.chatness.app).
+For those who bought Chatness prior to April 26th, 2022 [please contact us](/support) for access restore.
 
 </alert>
