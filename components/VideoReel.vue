@@ -42,7 +42,7 @@
               v-on:click="playing ? pause() : play()"
             >
               <source
-                src="/videos/chatness.mp4"
+                src="https://static.intenseloop.com/assets/chatness.mp4"
                 type="video/mp4"
                 autoplay="false"
                 controls="false"
