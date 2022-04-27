@@ -1,0 +1,12 @@
+<template>
+  <div>
+    <rect
+      x="40.1101"
+      y="40.6855"
+      width="145.182"
+      height="45.6824"
+      rx="19"
+      fill="#F97316"
+    ></rect>
+  </div>
+</template>

@@ -11,7 +11,9 @@ stack:
 demo: https://demo.chatness.app/
 ---
 
-Clean, easy to use and bootstrap-friendly starter kit for Ionic Angular applications built upon Firebase.
+Feature-complete chat app template built from ground up on top of Ionic, Angular, Capacitor and Firebase.
+
+<video-reel></video-reel>
 
 ## Stack
 
@@ -19,27 +21,29 @@ Clean, easy to use and bootstrap-friendly starter kit for Ionic Angular applicat
 
 ## Features
 
-14+ awesome features built for developers, backed by Firebase.
+Awesome features built for developers, backed by Firebase.
 
-- ✨&nbsp; [Offline Support](/tour/offline-support)
-- 🌙&nbsp; [Light and Dark UI](/tour/interface)
-- 💬&nbsp; [Chat in Groups](/tour/chat-group)
-- 🧑&nbsp; [Chat in Private](/tour/chat-private)
-- 🔎&nbsp; [Chat Contacts with seach](/tour/contact-list)
-- 📄&nbsp; [Chat Pagination](/tour/pagination)
-- 📷&nbsp; [Take Photos](/tour/take-photos)
-- 📱&nbsp; [Select Photos](/tour/select-photos)
-- 📹&nbsp; [Add Videos](/tour/select-photos)
-- 🗑️&nbsp; [Message Deletion](/tour/delete-messages)
-- 🔔&nbsp; [App Notifications](/tour/push-notifications)
+- ✨&nbsp;&nbsp; [Offline Support](/tour/offline-support)
+- 🌙&nbsp;&nbsp; [Light and Dark UI](/tour/interface)
+- 💬&nbsp;&nbsp; [Chat in Groups](/tour/chat-group)
+- 🧑&nbsp;&nbsp; [Chat in Private](/tour/chat-private)
+- 🔎&nbsp;&nbsp; [Chat Contacts with seach](/tour/contact-list)
+- 📄&nbsp;&nbsp; [Chat Pagination](/tour/pagination)
+- 📷&nbsp;&nbsp; [Take Photos](/tour/take-photos)
+- 📱&nbsp;&nbsp; [Select Photos](/tour/select-photos)
+- 📹&nbsp;&nbsp; [Add Videos](/tour/select-photos)
+- 🗑️&nbsp;&nbsp; [Message Deletion](/tour/delete-messages)
+- 🔔&nbsp;&nbsp; [App Notifications](/tour/push-notifications)
 
-plus app settings, autentication, and much more to come. Check out [our roadmap](https://tiny.one/chatness-roadmap)
+Not to mention App Settings, Authentication, and much more to come. Check out [our roadmap](https://tiny.one/chatness-roadmap).
 
 ## Demo
 
-<div style="max-width: 375px;">
+- App Store 👉&nbsp;&nbsp; https://tiny.one/chatness-app-store
+- Google Play 👉&nbsp;&nbsp; https://tiny.one/chatness-google-play
+- Self Hosted 👉&nbsp;&nbsp; https://demo.chatness.app
 
-👉&nbsp;&nbsp; https://demo.chatness.app
+<div style="max-width: 375px; margin: 0 auto">
 
 <code-sandbox :src="demo"></code-sandbox>
 

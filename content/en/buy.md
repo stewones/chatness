@@ -10,6 +10,10 @@ hidden: true
 
 👉&nbsp; [coming soon]
 
-## Buy from Gumroad
+<!-- ## Buy from Gumroad
 
-👉&nbsp; [coming soon]
+👉&nbsp; [coming soon] -->
+
+## Frequent Asked Questions
+
+👉&nbsp; https://tiny.one/chatness-faq
