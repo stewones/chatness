@@ -6,13 +6,13 @@ position: 99
 hidden: true
 ---
 
+## Buy from Gumroad
+
+👉&nbsp; https://tiny.one/chatness-gumroad
+
 ## Buy from CodeCanyon
 
 👉&nbsp; [coming soon]
-
-<!-- ## Buy from Gumroad
-
-👉&nbsp; [coming soon] -->
 
 ## Frequent Asked Questions
 
