@@ -2,7 +2,7 @@
   <div>
     <img
       class="rounded-xl cursor-pointer"
-      src="/images/mkt/video-reel-play.png"
+      src="/images/mkt/video-reel-banner.png"
       :style="hover ? imgStyleHovered : imgStyleNonHovered"
       v-on:click="show()"
       @mouseover="hover = true"

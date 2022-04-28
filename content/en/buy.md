@@ -12,7 +12,7 @@ hidden: true
 
 ## Buy from CodeCanyon
 
-👉&nbsp; [coming soon]
+👉&nbsp; https://tiny.one/chatness-codecanyon
 
 ## Frequent Asked Questions
 
