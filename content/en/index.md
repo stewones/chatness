@@ -35,7 +35,9 @@ Awesome features built for developers, backed by Firebase.
 - 🗑️&nbsp;&nbsp; [Message Deletion](/tour/delete-messages)
 - 🔔&nbsp;&nbsp; [App Notifications](/tour/push-notifications)
 
-Not to mention App Settings, Authentication, and much more to come. Check out [our roadmap](https://tiny.one/chatness-roadmap).
+Not to mention App Settings, Authentication, and much more to come.
+<br />
+Check out [our roadmap](https://tiny.one/chatness-roadmap)
 
 ## Demo
 
