@@ -15,7 +15,7 @@ From the app root issue these following commands in order
 
 1. `npm run seed:users`
 2. `npm run seed:groups`
-3. `npm run seed:tasks`
+3. `npm run seed:messages`
 
 - You can check email+password of created users at `seeds/users.json`
 - Messages seed may take a while to complete since it adds 1 year worth of data
