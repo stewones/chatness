@@ -9,7 +9,7 @@ Once [downloaded](/setup/app-download) you can extract files, cd to the root fol
 
 <alert>
 
-The root folder is the one containing files like `package.json`, `angular.json` and `capacitor.config.json`. Once you extract the zip, just cd to `chatness-app-x.y.z/chatness`. Everything asked you to execute from now on will require your current working directory to be the app root.
+The root folder is the one containing files like `package.json`, `angular.json` and `capacitor.config.json`. Once you extract the zip, just cd to `chatness-app-x.y.z/chatness`. Everything asked you to execute in this docs from now on will require your current working directory to be the project root.
 
 </alert>
 
