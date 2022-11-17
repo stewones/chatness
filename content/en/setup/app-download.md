@@ -5,7 +5,7 @@ position: 6
 category: Setup
 ---
 
-Grab the latest version of Chatness from CodeCanyon, in case you didn't acquire a license yet, [buy one here]().
+Grab the latest version of Chatness from CodeCanyon, in case you didn't acquire a license yet, [buy one here](/buy).
 
 <alert>
 
