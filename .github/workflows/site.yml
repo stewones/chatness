@@ -2,7 +2,7 @@ name: site
 "on":
   push:
     branches:
-      - master
+      - docs-v1
 
 jobs:
   deploy:

@@ -1,4 +1,4 @@
-name = "chatness-site"
+name = "chatness-site-v1"
 type = "webpack"
 account_id = "04e462cb3af0bbffa3eade71c4c5862b"
 workers_dev = true
