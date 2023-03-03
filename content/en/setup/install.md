@@ -5,11 +5,13 @@ position: 7
 category: Setup
 ---
 
-Once [downloaded](/setup/app-download) you can extract files, cd to the root folder and
+Once [downloaded](/setup/app-download) you can extract files, cd to the root folder and do the following steps.
+
+> The root folder is the one containing files like `package.json`, `angular.json` and `capacitor.config.json`. Once you extract the zip, just cd to `chatness-app-x.y.z/chatness`. Everything asked you to execute in this docs from now on will require your current working directory to be the project root.
 
 <alert>
 
-The root folder is the one containing files like `package.json`, `angular.json` and `capacitor.config.json`. Once you extract the zip, just cd to `chatness-app-x.y.z/chatness`. Everything asked you to execute in this docs from now on will require your current working directory to be the project root.
+👀 Prefer a video tutorial? [Watch this](https://www.youtube.com/watch?v=5C_HmD94gGE). The video was recorded using `npm` as package manager, but the steps are the same.
 
 </alert>
 
@@ -25,4 +27,10 @@ To verify if everything went well you can open the `package.json` file and check
 
 ## Dependencies
 
-Issue `npm install` to be installing all the project dependencies before continuing. Never try to rename the app after npm installation, first rename and then install. The order matters. Also make sure to not skip any step from now on if you plan to quickly get Chatness off the ground.
+Issue `pnpm install` to be installing all the project dependencies before continuing. Never try to rename the app after npm installation, first rename and then install. The order matters. Also make sure to not skip any step from now on if you plan to quickly get Chatness off the ground.
+
+<alert>
+
+Chatness v2 uses `pnpm` as package manager, it's the performant version of npm. If you still don't have it installed on your system make sure to do so before continuing. You can install it using `npm i -g pnpm` or following other [official instructions](https://pnpm.io/installation).
+
+</alert>

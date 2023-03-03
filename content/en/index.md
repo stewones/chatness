@@ -4,7 +4,7 @@ description: ""
 position: 1
 category: ""
 stack:
-  - Angular 13+
+  - Angular 15+
   - Ionic 6+
   - Capacitor 3+
   - Tailwind 3+
@@ -53,22 +53,22 @@ Check out [our roadmap](https://tiny.one/chatness-roadmap)
 
 ## App Structure
 
-The Chatness app folder structure is basically composed of
+The Chatness app folder structure is composed of
 
 ```
 .
-├── \elements
 ├── \functions
 ├── \resources
-├── \seeds
+├── \scripts
 ├── \src
 │ ├── \app
 │ │ ├── \actions
+│ │ ├── \api
 │ │ ├── \components
 │ │ ├── \config
 │ │ ├── \effects
 │ │ ├── \guards
-│ │ ├── \interfaces
+│ │ ├── \types
 │ │ ├── \pages
 │ │ ├── \reducers
 │ │ ├── app-routing.module.ts
@@ -87,10 +87,6 @@ The Chatness app folder structure is basically composed of
 └── package.json
 ```
 
-### Elements
-
-Decoupled environment for building web components. In case you need to modify or add a new element based on Chatness you can edit the `elements.modules.ts` which lives inside this folder and then issue `npm run build:elements`
-
 ### Functions
 
 Dedicated environment for server side stuff like the push notification trigger.
@@ -99,55 +95,70 @@ Dedicated environment for server side stuff like the push notification trigger.
 
 Icon and splash files you can use as example to edit your own before deploying the app to device.
 
-### Seeds
+### Scripts
 
-Where lives all the related code to pre populate database. This way you can test and extract the maximum of Chatness right on the beginning.
+Code to pre populate database. This way you can test and extract the maximum of Chatness right on the beginning. Also a good starting point if you plan to rewrite the `api` to use another backend.
 
 ### Actions
 
-Actions are the way app communicates with the global state. It carries a payload of information and can execute side effects as adding something to cache.
+Actions are the way app communicates with the global state in a Redux style. For instance, instead of using the `@ngrx` library or pure Angular Services we use a simpler implementation of Redux using some helpers from `elegante`. It reduces complexity and makes the app more predictable for small projects and teams, while still providing the same benefits of Redux.
+
+> To improve even more your dev experience, make sure to install the [Redux DevTools Extension](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=en) to see and track global state changes in real time.
 
 ```ts title="/src/app/actions/uiSetDisplay.ts"
-import { setCache } from "@rebased/cache";
+import { LocalStorage } from "@elegante/sdk";
 
+// example of an async action
 export function uiSetDisplay(mode: "light" | "dark") {
-  return function (dispatch) {
-    setCache("uiDisplay", mode);
+  return async function (dispatch) {
+    await LocalStorage.set("uiDisplay", mode);
     dispatch({
       type: "setDisplay",
       payload: mode,
     });
   };
 }
+
+// dispatching the action (elsewhere in the app)
+import { dispatch } from "@elegante/browser";
+dispatch(uiSetDisplay("dark"));
+
+// example of a sync action
+import { createAction } from "@elegante/browser";
+export const sessionSet = createAction("sessionSet");
+
+// dispatching the action (elsewhere in the app)
+import { dispatch } from "@elegante/browser";
+dispatch(sessionSet({ user: { name: "John" } }));
 ```
 
 ### Components
 
-Place where every reusable/exportable components lives in. If you aren't an angular developer run a simple command and they're all exported as custom elements to be used as web components.
+Reusable components that can be used in any page.
 
 ### Config
 
-General app configurations
+Shared configurations
 
 ### Effects
 
-App specific side effects
+Shared side effects
 
 ### Guards
 
-Route guards from angular
+Route guards for Angular
 
-### Interfaces
+### Types
 
-App specific interfaces
+Shared types
 
 ### Pages
 
-App specific pages
+Pages connected to the Angular Router
 
 ### Reducers
 
-App specific reducers
+Global state reducers
 
 ### Assets
 
@@ -189,3 +200,7 @@ Get Chatness up and running for development through these little steps
 8. [Seed database](/setup/database-seed)
 9. [Run the app](/setup/app-run)
 10. Enjoy 🥳
+
+## Looking for v1?
+
+The v1 version of Chatness is still available at [v1.chatness.app](https://v1.chatness.app)

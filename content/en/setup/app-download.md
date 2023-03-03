@@ -9,6 +9,6 @@ Grab the latest version of Chatness from CodeCanyon, in case you didn't acquire 
 
 <alert>
 
-For those who bought Chatness prior to April 26th, 2022 [please contact us](/support) for access restore.
+For those who bought Chatness prior to April 26th, 2022 [please contact us](/support) for purchase restore.
 
 </alert>

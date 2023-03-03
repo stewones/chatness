@@ -13,11 +13,11 @@ This step requires a [Service Account](/setup/firebase-add-service-account) in p
 
 From the app root issue these following commands in order
 
-1. `npm run seed:users`
-2. `npm run seed:groups`
-3. `npm run seed:messages`
+1. `pnpm run seed:users`
+2. `pnpm run seed:groups`
+3. `pnpm run seed:messages`
 
-- You can check email+password of created users at `seeds/users.json`
+- You can check email+password of created users at `scripts/users.json`
 - Messages seed may take a while to complete since it adds 1 year worth of data
 - Check out Firebase console to see data added on Cloud Firestore.
 - Once it's completed you should be all set to [run the app](/setup/app-run).
