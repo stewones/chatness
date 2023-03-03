@@ -23,6 +23,18 @@ Updating Firebase, Angular and some other packages. This is a major update and i
 - `tell(…)` effect has been renamed to `makeAlert(…)`
 - Enabled angular templates in strict mode for better type checking
 - Fixed a bug on contacts search where results were not being updated correctly
+- now Chatness is shipped with a `pnpm-lock.yaml` file to take advantage of a faster and more efficient package manager. If you prefer to use `npm` or `yarn` you can delete the `pnpm-lock.yaml` file and run `npm install` or `yarn install` instead. If you prefer to use `pnpm` you can run `pnpm install` as usual. If you don't know what `pnpm` is, you can read more about it [here](https://pnpm.io/).
+
+## Flew migration
+
+If you have adopted flew in some of your projects, here's a quick guide on how to migrate away from it.
+
+- @flew/state becomes @elegante/browser
+- @flew/core becomes @elegante/sdk
+- @flew/network removed. You need to rewrite the network requests by yourself using any external source (ie: firebase sdk, parse sdk, native fetch api, etc)
+- Since flew’s `fetch` is removed we can use any external source and do cache/state values automatically with the newer `fast` api importable from `@elegante/browser`
+- All cache apis are removed (setCache, getCache, etc). They can be replaced with the `LocalStorage` and `IndexedDB` wrappers importable from `@elegante/sdk`. These wrappers are also used internally by the `fast` API but you can replace them with any “Storage” mechanism. (See fast options on browser load)
+- All the other flew packages are deprecated (ie: Firebase, Parse, etc). Everything can be done or reworked using just elegante’s sdk and browser packages. Elegante's packages are fully typed with typescript and examples, if you need help migrating your code, please reach out to us.
 
 ## 1.3.0
 
