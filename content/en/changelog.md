@@ -22,6 +22,7 @@ Updating Firebase, Angular and some other packages. This is a major update and i
 - All `interfaces` and `types` have been grouped under the new folder `types` at the root level.
 - `tell(…)` effect has been renamed to `makeAlert(…)`
 - Enabled angular templates in strict mode for better type checking
+- Fixed a bug on contacts search where results were not being updated correctly
 
 ## 1.3.0
 
