@@ -11,7 +11,15 @@ stack:
 demo: https://demo.chatness.app/
 ---
 
-Feature-complete chat app template built from ground up on top of Ionic, Angular, Capacitor and Firebase.
+<div class="flex flex-col sm:flex-row items-start">
+  <p class="w-full">
+  Feature-complete chat app template built from ground up on top of Ionic, Angular, Capacitor and Firebase.
+  </p>
+  <a class="w-full" style="max-width: 272px;" href="https://www.producthunt.com/posts/chatness-v2?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-chatness&#0045;v2" target="_blank">
+    <img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=382330&theme=dark" alt="Chatness&#0032;v2 - A&#0032;Hybrid&#0032;Chat&#0032;App&#0032;Template&#0032;with&#0032;Versatile&#0032;Native&#0032;Features | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" />
+  </a>
+
+</div>
 
 <video-reel></video-reel>
 
