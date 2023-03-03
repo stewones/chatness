@@ -201,6 +201,6 @@ Get Chatness up and running for development through these little steps
 9. [Run the app](/setup/app-run)
 10. Enjoy 🥳
 
-## Looking for v1?
+## Looking for v1 of docs?
 
 The v1 version of Chatness is still available at [v1.chatness.app](https://v1.chatness.app)

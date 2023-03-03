@@ -18,7 +18,7 @@ Updating Firebase, Angular and some other packages. This is a major update and i
 - Updated to Ionic 6.6.0
 - All external requests have been moved from `effects` folder to a new folder called `api`. In addition, the `flew` dep has been removed and calls rewritten to use pure Firebase v9 APIs.
 - The `elements` build feature has been removed. Chatness now doesn’t produce web components anymore and is intended to work as an angular application from now on. We plan to release Chatness for other frameworks soon.
-- `authWithUserIp` has been removed as it was only supposed to be used by earlier mechanisms of Chatness Demo, and not a feature at all.
+- `authWithUserIp` has been removed as it was only intended to be used by earlier mechanisms of Chatness Demo, it wasn't designed to be a feature at all.
 - All `interfaces` and `types` have been grouped under the new folder `types` at the root level.
 - `tell(…)` effect has been renamed to `makeAlert(…)`
 - Enabled angular templates in strict mode for better type checking
