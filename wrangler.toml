@@ -1,8 +1,8 @@
 name = "chatness-site-v1"
-type = "webpack"
 account_id = "04e462cb3af0bbffa3eade71c4c5862b"
 workers_dev = true
+main = "src/index.ts"
+compatibility_date = "2023-03-02"
 
 [site]
 bucket = "dist"
-entry-point = "workers"
