@@ -15,7 +15,7 @@ Feature-complete chat app template built from ground up on top of Ionic, Angular
 
 <video-reel></video-reel>
 
-## Stack
+## Tech Stack
 
 <list :items="stack"></list>
 
@@ -34,10 +34,8 @@ Awesome features built for developers, backed by Firebase.
 - 📹&nbsp;&nbsp; [Add Videos](/tour/select-photos)
 - 🗑️&nbsp;&nbsp; [Message Deletion](/tour/delete-messages)
 - 🔔&nbsp;&nbsp; [App Notifications](/tour/push-notifications)
-
-Not to mention App Settings, Authentication, and much more to come.
-<br />
-Check out [our roadmap](https://tiny.one/chatness-roadmap)
+- 🔧&nbsp;&nbsp; [App Settings](/tour/app-settings)
+- 🔐&nbsp;&nbsp; [Authentication](/tour/authentication)
 
 ## Demo
 
@@ -51,59 +49,97 @@ Check out [our roadmap](https://tiny.one/chatness-roadmap)
 
 </div>
 
-## App Structure
+## Why should I care?
 
-The Chatness app folder structure is composed of
+- You need a versatile and free/cheap go-to server infrastructure to build a chat or any related app, but have no time to make it yourself.
+
+- You need a chat or related app for your business, but don't want to spend a lot of money developing it from the ground up, or you don't want to pay a monthly fee for a service because what you need is dead simple.
+
+- You're willing to take a risk at hiring someone to customize a pre-made app for your business, but you also don't have unlimited time and resources to experiment and fail.
+
+- You want to build a chat or related app, but you don't want to spend a lot of time learning how to build it from scratch by yourself.
+
+- Maybe you're already working on building something related at your company, but it's not working out as expected and you need to accelerate the process.
+
+If you identify with any of the above, keep reading 👇
+
+## What you need to know before buying
+
+- You need to have a basic understanding of how to use the command line.
+
+- You need to have a basic understanding of how to use Git.
+
+- You need to have a basic understanding of how to use Firebase.
+
+- You need to have a basic understanding of how to use Angular.
+
+- You need to have a basic understanding of how to use Ionic.
+
+- You need to have a basic understanding of how to use Capacitor.
+
+- You need to have a basic understanding of how to use TypeScript.
+
+- You need to have a basic understanding of how to use JavaScript.
+
+- You need to have a basic understanding of how to use HTML.
+
+- You need to have a basic understanding of how to use CSS.
+
+## App engineering overview
+
+The app is built on top of the following concepts:
+
+- It must be easy to set up and reuse.
+
+- It must be easy to customize.
+
+- It must be easy to maintain.
+
+- It must be easy to scale.
+
+- It must be easy to deploy.
+
+- It must be easy to test.
+
+- It must be easy to debug.
+
+- It must be easy to integrate with other apps.
+
+- It must be easy to integrate with other services.
+
+That said, the project structure is arranged in a way that makes it easy to understand and maintain, and it's also easy to customize and extend. Take a look at the project folder structure below and what they mean.
+
+## Basic App Structure
 
 ```
-.
-├── \functions
-├── \resources
-├── \scripts
-├── \src
-│ ├── \app
-│ │ ├── \actions
-│ │ ├── \api
-│ │ ├── \components
-│ │ ├── \config
-│ │ ├── \effects
-│ │ ├── \guards
-│ │ ├── \types
-│ │ ├── \pages
-│ │ ├── \reducers
-│ │ ├── app-routing.module.ts
-│ │ ├── app-component.ts
-│ │ ├── app.module.ts
-│ │ ├── shell-routing.module.ts
-│ │ ├── shell-component.ts
-│ │ └── shell.module.ts
-│ ├── \assets
-│ │ ├── \fonts
-│ │ └── \images
-│ ├── \environments
-│ │ ├── \environment.prod.ts
-│ │ └── \environment.ts
-│ └── \theme
-└── package.json
+├── src
+│ ├── functions
+│ ├── app
+│ │ ├── actions
+│ │ ├── api
+│ │ ├── components
+│ │ ├── configs
+│ │ ├── effects
+│ │ ├── guards
+│ │ ├── pages
+│ │ ├── reducers
+│ │ ├── theme
+│ │ ├── types
 ```
 
 ### Functions
 
-Dedicated environment for server side stuff like the push notification trigger.
+Dedicated environment for infrastructure code like the push notification handler.
 
-### Resources
+## Actions
 
-Icon and splash files you can use as example to edit your own before deploying the app to device.
+Plain JavaScript objects that represent an intention to change the state of the application. They contain a type property that describes the type of action being performed and any additional data required to complete the action. Actions are typically created by action creators, which are functions that return an action object.
 
-### Scripts
-
-Code to pre populate database. This way you can test and extract the maximum of Chatness right on the beginning. Also a good starting point if you plan to rewrite the `api` to use another backend.
-
-### Actions
-
-Actions are the way app communicates with the global state in a Redux style. For instance, instead of using the `@ngrx` library or pure Angular Services we use a simpler implementation of Redux using some helpers from `elegante`. It reduces complexity and makes the app more predictable for small projects and teams, while still providing the same benefits of Redux.
+We use actions on Chatness to dispatch events to the Redux store, which will then update the global state of the application. We don't rely on Angular Services, NGRX, or any other state management system to handle global states. We aim to keep the app as simple as possible, and we don't want to introduce unnecessary complexity.
 
 > To improve even more your dev experience, make sure to install the [Redux DevTools Extension](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=en) to see and track global state changes in real time.
+
+examples:
 
 ```ts title="/src/app/actions/uiSetDisplay.ts"
 import { LocalStorage } from "@elegante/sdk";
@@ -132,37 +168,43 @@ import { dispatch } from "@elegante/browser";
 dispatch(sessionSet({ user: { name: "John" } }));
 ```
 
-### Components
+## API
 
-Reusable components that can be used in any page.
+The API folder contains all the external requests being made and is shared across components. Those are "pure functions" that only return data and don't have any side effects. They are responsible for fetching data from external sources, such as Firestore, and returning the data in a format that the application can use. That said, in case you want to use a different API you can easily replace the functions inside this folder.
 
-### Config
+## Components
 
-Shared configurations
+The components folder contains reusable UI elements that can be used throughout the application. These elements are written as Angular components, which consist of a TypeScript class and an HTML template. We rarely use Angular directives, pipes, or services in our components, and we try to keep all the source code deadly simple in order to make them "portable" to other frameworks if needed.
 
-### Effects
+## Configs
 
-Shared side effects
+The configs folder contains configuration files for the application, such as environment variables, API keys, and other settings that need to be loaded at app runtime.
 
-### Guards
+## Effects
 
-Route guards for Angular
+Effects are functions that handle side effects in the application. Again not tied to Angular at all, they allow you to perform actions in response to specific events, such as when an action is dispatched, when a component is initialized, the user navigates, or when the user interacts with the UI.
 
-### Types
+## Guards
 
-Shared types
+Guards and routes are the only framework-specific Angular thing used in Chatness. They are used to control access to specific routes or parts of the application based on certain conditions. For example, a guard is used to prevent unauthenticated users from accessing sensitive areas.
 
-### Pages
+## Pages
 
-Pages connected to the Angular Router
+The pages folder contains the main views or screens connected to routes. Each page consists of one or more components.
 
-### Reducers
+## Reducers
 
-Global state reducers
+Reducers are pure functions that take the current state of Chatness and the action and return a new state that reflects the changes made by this action. In other words, they are responsible for updating the store in response to actions. We use Redux only to manage the global state of the application, components are still responsible for handling their own local state.
 
-### Assets
+## Theme
 
-Fonts and images shipped within the app.
+The theme folder contains stylesheets and other resources related to the visual design of Chatness.
+
+## Types
+
+The types folder contains all shared type definitions for various parts of Chatness. These types are used to ensure type safety and catch errors at compile time. We use TypeScript and Angular templates in strict mode to ensure the most type safety possible.
+
+## Assets
 
 Available fonts
 
@@ -180,7 +222,7 @@ Available images
 - favicon.png
 - 404.svg
 
-### Theme
+## Theme
 
 General styling stuff is built with css variables in mind. So if you need to change some primary color in the app/elements you just need to edit a variable located there.
 
@@ -201,6 +243,6 @@ Get Chatness up and running for development through these little steps
 9. [Run the app](/setup/app-run)
 10. Enjoy 🥳
 
-## Looking for v1 of docs?
+## Looking for the v1 version of docs?
 
 The v1 version of Chatness is still available at [v1.chatness.app](https://v1.chatness.app)
