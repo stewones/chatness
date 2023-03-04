@@ -8,18 +8,18 @@ hidden: true
 
 ## Buy from Gumroad
 
-👉&nbsp; https://tiny.one/chatness-gumroad
+👉&nbsp; https://bit.ly/chatness-gumroad
 
 ## Buy from CodeCanyon
 
-👉&nbsp; https://tiny.one/chatness-codecanyon
+👉&nbsp; https://bit.ly/chatness-codecanyon
 
 ## Frequent Asked Questions
 
-👉&nbsp; https://tiny.one/chatness-faq
+👉&nbsp; https://chatness.app/faq
 
 <alert>
 
-For those who bought Chatness prior to April 26th, 2022 [please contact us](/support) for access restore.
+For those who bought Chatness prior to April 26th, 2022 [please contact us](/support) for purchase restore.
 
 </alert>

@@ -31,23 +31,7 @@ Talk via email
 
 <div class="wrapper">
 
-👉 &nbsp; support@intenseloop.com
-
-</div>
-
-</div>
-
-## Roadmap
-
-<div class="flex flex-col space-y-1">
-
-<div>
-Check out our roadmap
-</div>
-
-<div class="wrapper">
-
-👉 &nbsp; https://tiny.one/chatness-roadmap
+👉 &nbsp; support@chatness.app
 
 </div>
 
@@ -63,7 +47,7 @@ Got any issues?
 
 <div class="wrapper">
 
-👉 &nbsp; https://tiny.one/chatness-bug
+👉 &nbsp; talk with me on Discord https://discord.gg/wAfV85rA3v
 
 </div>
 
@@ -79,7 +63,7 @@ Got ideas about current features?
 
 <div class="wrapper">
 
-👉 &nbsp; https://tiny.one/chatness-enhancement
+👉 &nbsp; talk with me on Discord https://discord.gg/wAfV85rA3v
 
 </div>
 
@@ -95,7 +79,7 @@ Want to see new features added?
 
 <div class="wrapper">
 
-👉 &nbsp; https://tiny.one/chatness-feature
+👉 &nbsp; talk with me on Discord https://discord.gg/wAfV85rA3v
 
 </div>
 
