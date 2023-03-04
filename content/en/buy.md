@@ -14,6 +14,10 @@ hidden: true
 
 👉&nbsp; https://bit.ly/chatness-codecanyon
 
+## Team License
+
+Please [contact us](mailto:support@chatness.app) for team license.
+
 ## Frequent Asked Questions
 
 👉&nbsp; https://chatness.app/faq
