@@ -125,4 +125,4 @@ This Agreement is governed by the laws of the Province of Espírito Santo and th
 
 Unsure which license you need, or unsure if your use case is covered by our licenses?
 
-Email us at support@intenseloop.com with your questions.
+Email us at support@chatness.app with your questions.
