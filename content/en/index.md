@@ -11,21 +11,35 @@ stack:
 demo: https://demo.chatness.app/
 ---
 
-<div class="flex flex-col sm:flex-row items-start">
-  <p class="w-full">
-  Feature-complete chat app template built from ground up on top of Ionic, Angular, Capacitor and Firebase.
-  </p>
-  <a class="w-full" style="max-width: 272px;" href="https://www.producthunt.com/posts/chatness-v2?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-chatness&#0045;v2" target="_blank">
+<p>
+
+Chatness is a hybrid chat app template that can be used as a starting point for any chat or related app, available for web, Android and iOS. It's a fully functional chat app that can be used as is, or it can be customized to fit your needs.
+
+</p>
+
+<p>
+   <a class="w-full" style="max-width: 272px;" href="https://www.producthunt.com/posts/chatness-v2?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-chatness&#0045;v2" target="_blank">
     <img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=382330&theme=dark" alt="Chatness&#0032;v2 - A&#0032;Hybrid&#0032;Chat&#0032;App&#0032;Template&#0032;with&#0032;Versatile&#0032;Native&#0032;Features | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" />
   </a>
-
-</div>
+</p>
 
 <video-reel></video-reel>
 
-## Tech Stack
+<p class="tiles flex flex-col space-y-1">
+    <img src="https://cdn.inl.gg/images/chatness/firebase-version-tile.png" />    
+    <img src="https://cdn.inl.gg/images/chatness/angular-version-tile.png"  />    
+    <img src="https://cdn.inl.gg/images/chatness/ionic-version-tile.png"  />
+      <a href="https://chatness.app/tour/offline-support" title="Chatness Features Tour">
+    <img src="https://cdn.inl.gg/images/chatness/features-tour-tile.png" alt="Chatness Features Tour" />
+    </a>
+</p>
+<!-- <list :items="stack"></list> -->
 
-<list :items="stack"></list>
+## Demo
+
+- App Store 👉&nbsp;&nbsp; https://apple.co/41VpNh8
+- Google Play 👉&nbsp;&nbsp; https://bit.ly/chatness-android
+- Self Hosted 👉&nbsp;&nbsp; https://demo.chatness.app
 
 ## Features
 
@@ -44,12 +58,6 @@ Awesome features built for developers, backed by Firebase.
 - 🔔&nbsp;&nbsp; [App Notifications](/tour/push-notifications)
 - 🔧&nbsp;&nbsp; [App Settings](/tour/app-settings)
 - 🔐&nbsp;&nbsp; [Authentication](/tour/authentication)
-
-## Demo
-
-- App Store 👉&nbsp;&nbsp; https://tiny.one/chatness-app-store
-- Google Play 👉&nbsp;&nbsp; https://tiny.one/chatness-google-play
-- Self Hosted 👉&nbsp;&nbsp; https://demo.chatness.app
 
 <div style="max-width: 375px; margin: 0 auto">
 
@@ -254,3 +262,9 @@ Get Chatness up and running for development through these little steps
 ## Looking for the v1 version of docs?
 
 The v1 version of Chatness is still available at [v1.chatness.app](https://v1.chatness.app)
+
+<style>
+    .prose img, .wrapper p {
+        margin: 0;
+    }
+</style>
