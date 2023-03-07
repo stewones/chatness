@@ -34,12 +34,6 @@ cd ./chatness-app/functions
 ```
 
 ```sh
-firebase emulators:start
-```
-
-or just
-
-```sh
 pnpm start
 ```
 
