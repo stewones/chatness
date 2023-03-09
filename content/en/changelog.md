@@ -5,6 +5,26 @@ position: 3
 category: ""
 ---
 
+## 2.1.0
+
+> March 9, 2023
+
+### Welcome ChatGPT 🤖
+
+This version introduces a new feature using OpenAI's ChatGPT. A new `ai` user is created when you run the seed and you can talk to her, just make sure to have `Alicia` as your contact.
+
+Other minor changes:
+
+- Updated to Capacitor 4
+- Added support for Firebase Emulators
+- Added hot key "meta+enter" to send messages quickly (mac command+enter, windows ctrl+enter)
+- Added support for auto detect links and open them in a new tab or modal browser when running on a mobile device.
+- Many small bug fixes and improvements like a bug on contacts list where it was not showing empty state when there were no contacts. Also linked it to the composer so you can start a new conversation with AI right from there.
+- Updated docs and added more sections
+  - [Firebase Emulators](/setup/firebase-emulators)
+  - [OpenAI](/setup/openai)
+  - [Developing with Chatness](/guides/developing-with-chatness)
+
 ## 2.0.0
 
 > March 2, 2023

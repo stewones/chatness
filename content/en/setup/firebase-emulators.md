@@ -30,11 +30,11 @@ The init command will ask you to select the emulators you want to use, when aske
 After emulators are initiated, run the following command to start them all at once:
 
 ```sh
-cd ./chatness-app/functions
+cd ../
 ```
 
 ```sh
-pnpm start
+pnpm run functions
 ```
 
 ## Seeding data to Firestore and Auth emulators
@@ -63,6 +63,14 @@ pnpm run seed:users
 ```
 
 The above command will create users with authentication and seed the `User` collection in the emulated firestore. Note that data is erased when you stop the emulators, so you will need to seed data again if you want to test something else.
+
+alternativaly, you can seed all the data at once without worring about setting globals.
+
+```sh
+npm run seed
+```
+
+Learn more at [Developing with Chatness](/guides/developing-with-chatness)
 
 ## Run the app locally with emulators
 

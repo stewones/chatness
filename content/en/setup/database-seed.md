@@ -23,8 +23,8 @@ From the app root run these commands in order
 2. `pnpm run seed:groups`
 3. `pnpm run seed:messages`
 
-- Check email+password of created users at `scripts/users.json`
-- Messages seed may take a while to complete since it adds 1 year worth of data
+- Check email+password of created users at `scripts/seed/users.json`
+- Messages seed may take a while to complete in production since it adds 1 year worth of data for heavy load testing purposes. If you want to tweak the number of days to add, add a second param to the command, like `pnpm run seed:messages 30` to add only 30 days of messages.
 - Check Firebase console to see data added on Cloud Firestore.
 - Once it's completed you should be all set to [run the app](/setup/app-run).
 

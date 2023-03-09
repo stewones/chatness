@@ -19,5 +19,12 @@ export default theme({
     routes: createSitemapRoutes,
     exclude: ["/releases", "/settings"],
   },
+  router: {
+    extendRoutes(routes, resolve) {
+      routes.push({
+        path: "/docs",
+        redirect: "/setup/install",
+      });
+    },
+  },
 });
-//

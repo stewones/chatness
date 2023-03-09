@@ -26,9 +26,9 @@ Then access the **Service accounts** tab and **generate a new private key** for 
 
 ### Paste in the correct place
 
-Once the json is downloaded copy it to the `seeds` folder and rename the file to `service-account.json`
+Once the json is downloaded copy it to the `scripts` folder and rename the file to `service-account.json`
 
-```json title="/seeds/service-account.json"
+```json title="/scripts/service-account.json"
 {
   "type": "service_account",
   "project_id": "my-app-d7vac",
@@ -45,6 +45,6 @@ Once the json is downloaded copy it to the `seeds` folder and rename the file to
 
 <alert type="warning">
 
-Final result should look like as the code snippet above. Make sure to add this file into your `.gitignore`
+Final result should look like as the code snippet above. Make sure to have this file whithin your `.gitignore` so it won't be published.
 
 </alert>
