@@ -11,18 +11,21 @@ category: ""
 
 ### Welcome ChatGPT 🤖
 
-This version introduces a new feature using OpenAI's ChatGPT. A new `ai` user is created when you run the seed and you can talk to her, just make sure to have `Alicia` as your contact.
+<img src="https://cdn.inl.gg/images/chatness/introducing-alicia.gif" width="250" alt="Chatness now with OpenAI's ChatGPT" />
+
+This version introduces OpenAI's ChatGPT feature. A new `ai` user named `Alicia` is created when the seed is ran, this user acts like an assistant for Q&A. You can ask it questions and it will answer you. It's a great way to test the app and see how it works under the hood.
 
 Other minor changes:
 
 - Updated to Capacitor 4
 - Added support for Firebase Emulators
 - Added hot key "meta+enter" to send messages quickly (mac command+enter, windows ctrl+enter)
-- Added support for auto detect links and open them in a new tab or modal browser when running on a mobile device.
-- Many small bug fixes and improvements like a bug on contacts list where it was not showing empty state when there were no contacts. Also linked it to the composer so you can start a new conversation with AI right from there.
+- Added support for automatically detect links and open them with in-app browser.
+- Added a new global config `APP_INITIAL_ROUTE` to customize the initial route, renamed `home` page to `groups` and made `contacts` the initial route.
+- Many small bug fixes and improvements like a bug on contacts list where it was not showing empty state when there were no contacts.
 - Updated docs and added more sections
   - [Firebase Emulators](/setup/firebase-emulators)
-  - [OpenAI](/setup/openai)
+  - [OpenAI's GPT-3](/setup/openai)
   - [Developing with Chatness](/guides/developing-with-chatness)
 
 ## 2.0.0

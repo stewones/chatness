@@ -13,7 +13,7 @@ demo: https://demo.chatness.app/
 
 <p>
 
-Chatness is a hybrid chat app template that can be used as a starting point for any chat or related app, available for web, Android and iOS. It's a fully functional chat app that can be used as is, or it can be customized to fit your needs.
+Chatness is a chat boilerplate engine that can be used as a starting point for any kind of app built on top of ChatGPT. It's a fully functional chat app combining multiple features like auth, private chat, groups, chatbot, profile, settings and more. Chatness is available for web, android and ios.
 
 </p>
 
@@ -35,15 +35,9 @@ Chatness is a hybrid chat app template that can be used as a starting point for 
 </p>
 <!-- <list :items="stack"></list> -->
 
-## Demo
-
-- App Store 👉&nbsp;&nbsp; https://apple.co/41VpNh8
-- Google Play 👉&nbsp;&nbsp; https://bit.ly/chatness-android
-- Self Hosted 👉&nbsp;&nbsp; https://demo.chatness.app
-
 ## Features
 
-Awesome features built for developers, backed by Firebase.
+Awesome features built for developers and users:
 
 - ✨&nbsp;&nbsp; [Offline Support](/tour/offline-support)
 - 🌙&nbsp;&nbsp; [Light and Dark UI](/tour/interface)
@@ -58,22 +52,34 @@ Awesome features built for developers, backed by Firebase.
 - 🔔&nbsp;&nbsp; [App Notifications](/tour/push-notifications)
 - 🔧&nbsp;&nbsp; [App Settings](/tour/app-settings)
 - 🔐&nbsp;&nbsp; [Authentication](/tour/authentication)
+- 🤖&nbsp;&nbsp; [Chat Bots](/changelog#welcome-chatgpt-)
+
+## Demo
+
+- App Store 👉&nbsp;&nbsp; https://apple.co/41VpNh8
+- Google Play 👉&nbsp;&nbsp; https://bit.ly/chatness-android
+- Self Hosted 👉&nbsp;&nbsp; https://demo.chatness.app
 
 <div style="max-width: 375px; margin: 0 auto">
 
-<code-sandbox :src="demo"></code-sandbox>
-
+  <div class="demo">
+    <code-sandbox :src="demo"></code-sandbox>
+     <small class="block w-full text-center">
+        try jane@doe.com / 123456
+      </small>
+  </div>
+ 
 </div>
 
 ## Why should I care?
 
-- You need a versatile and free/cheap go-to server infrastructure to build a chat or any related app, but have no time to make it yourself.
+- You need a versatile and free/cheap go-to server infrastructure to build a chat app with support for automated conversations, but have no time to make it yourself.
 
-- You need a chat or related app for your business, but don't want to spend a lot of money developing it from the ground up, or you don't want to pay a monthly fee for a service because what you need is dead simple.
+- You need a chatbot or related app for your business, but don't want to spend a lot of money developing it from the ground up, or you don't want to pay a monthly fee for a service because what you need is dead simple.
 
-- You're willing to take a risk at hiring someone to customize a pre-made app for your business, but you also don't have unlimited time and resources to experiment and fail.
+- You're willing to take a risk at hiring someone to customize a template and create all your business logic, but you also don't have unlimited time and resources to experiment and fail.
 
-- You want to build a chat or related app, but you don't want to spend a lot of time learning how to build it from scratch by yourself.
+- You want to build a chatbot, but you don't want to spend a lot of time learning how to build it from scratch by yourself.
 
 - Maybe you're already working on building something related at your company, but it's not working out as expected and you need to accelerate the process.
 
@@ -266,5 +272,8 @@ The v1 version of Chatness is still available at [v1.chatness.app](https://v1.ch
 <style>
     .prose img, .wrapper p {
         margin: 0;
+    }
+    .demo .codesandbox, .demo .codesandbox iframe {     
+        height: 768px !important;     
     }
 </style>
